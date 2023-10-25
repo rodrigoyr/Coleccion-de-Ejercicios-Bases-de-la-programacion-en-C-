@@ -15,5 +15,18 @@ int main() {
         // Imprime un mensaje diciendo que el usuario es menor de edad
         std::cout << "Eres menor de edad.\n";
     }
+
+    int precEntrada = 20;
+    if (edad <=3){
+        precEntrada *= 0;
+        std::cout << "Como tienes " << edad << " años tu entrada cuesta " << precEntrada;
+    }
+    if ((edad <= 18 && edad > 3) || edad > 60){
+        precEntrada *= 0.7;
+        std::cout << "Como tienes " << edad << " años tu entrada cuesta " << precEntrada;
+    }
+    if (edad > 18 && edad <= 60){
+        std::cout << "Como tienes " << edad << " años tu entrada cuesta " << precEntrada;
+    }
     return 0;
 }
